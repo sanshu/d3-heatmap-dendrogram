@@ -135,7 +135,7 @@
                     .style("top", (d3.event.pageY - 10) + "px")
                     .select("#value")
                     .html(
-                        "Column: " + colLabel[d.col] + "<br>Row: " + rowLabel[d.row]
+                        "Column: " + colLabel[d.col-1] + "<br>Row: " + rowLabel[d.row-1]
                         + "<br>Value: " + d.value
                         );
                 //Show the tooltip
