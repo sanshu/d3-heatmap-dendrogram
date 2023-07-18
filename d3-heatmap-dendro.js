@@ -6,6 +6,7 @@
 
     d3.heatmapDendro = function (data, parent) {
 
+        d3.select(parent).selectAll("*").remove();
         if (!data || !data.matrix)
             return;
         ;
