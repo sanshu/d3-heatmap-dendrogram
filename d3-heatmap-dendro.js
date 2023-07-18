@@ -135,7 +135,7 @@
                     .style("top", (d3.event.pageY - 10) + "px")
                     .select("#value")
                     .html(
-                        "Cell type: " + colLabel[d.col] + "<br>Sample name: " + rowLabel[d.row]
+                        "Column: " + colLabel[d.col] + "<br>Row: " + rowLabel[d.row]
                         + "<br>Value: " + d.value
                         );
                 //Show the tooltip
