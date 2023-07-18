@@ -106,7 +106,7 @@
                 const file = input.files[0];
                 const reader = new FileReader();
                 reader.onload = (res) => {
-                    const data = res.target.result;
+                    const data = JSON.parse(res.target.result);
                     d3.heatmapDendro(data, "#heatmap", 5000);
                 };
                 reader.onerror = (err) => console.log(err);
